@@ -53,8 +53,7 @@ index 0000000..9e26dfe
 \ No newline at end of file
 diff --git a/node_modules/react-native-sensors/android/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar b/node_modules/react-native-sensors/android/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar
 new file mode 100644
-index 0000000..8bc86c2
-Binary files /dev/null and b/node_modules/react-native-sensors/android/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar differ
+index 0000000..e69de29
 diff --git a/node_modules/react-native-sensors/android/build/intermediates/incremental/mergeDebugShaders/merger.xml b/node_modules/react-native-sensors/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
 new file mode 100644
 index 0000000..67c0895
@@ -3256,16 +3255,31 @@ index ef7783c..00d0859 100644
  import com.facebook.react.bridge.Arguments;
  import com.facebook.react.bridge.ReactApplicationContext;
 diff --git a/node_modules/react-native-sensors/android/src/main/java/com/sensors/Magnetometer.java b/node_modules/react-native-sensors/android/src/main/java/com/sensors/Magnetometer.java
-index ca53e5d..1cf088d 100644
+index ca53e5d..bcc9f9a 100644
 --- a/node_modules/react-native-sensors/android/src/main/java/com/sensors/Magnetometer.java
 +++ b/node_modules/react-native-sensors/android/src/main/java/com/sensors/Magnetometer.java
-@@ -6,8 +6,7 @@ import android.hardware.SensorEvent;
+@@ -6,7 +6,7 @@ import android.hardware.SensorEvent;
  import android.hardware.SensorEventListener;
  import android.hardware.SensorManager;
  import android.util.Log;
 -import android.support.annotation.Nullable;
--
 +import androidx.annotation.Nullable;
+ 
  import com.facebook.react.bridge.Arguments;
  import com.facebook.react.bridge.ReactApplicationContext;
- import com.facebook.react.bridge.ReactContextBaseJavaModule;
+diff --git a/node_modules/react-native-sensors/tests/android/app/src/androidTest/java/com/tests/DetoxTest.java b/node_modules/react-native-sensors/tests/android/app/src/androidTest/java/com/tests/DetoxTest.java
+index de2516a..62fa07a 100644
+--- a/node_modules/react-native-sensors/tests/android/app/src/androidTest/java/com/tests/DetoxTest.java
++++ b/node_modules/react-native-sensors/tests/android/app/src/androidTest/java/com/tests/DetoxTest.java
+@@ -1,8 +1,8 @@
+ package com.tests;
+ 
+-import android.support.test.filters.LargeTest;
+-import android.support.test.rule.ActivityTestRule;
+-import android.support.test.runner.AndroidJUnit4;
++import androidx.test.filters.LargeTest;
++import androidx.test.rule.ActivityTestRule;
++import androidx.test.runner.AndroidJUnit4;
+ 
+ import com.wix.detox.Detox;
+ 

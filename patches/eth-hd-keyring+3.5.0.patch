@@ -1,0 +1,13 @@
+diff --git a/node_modules/eth-hd-keyring/index.js b/node_modules/eth-hd-keyring/index.js
+index e2520ca..c8e77e9 100644
+--- a/node_modules/eth-hd-keyring/index.js
++++ b/node_modules/eth-hd-keyring/index.js
+@@ -7,7 +7,7 @@ const ethUtil = require('ethereumjs-util')
+ const sigUtil = require('eth-sig-util')
+ 
+ // Options:
+-const hdPathString = `m/44'/60'/0'/0`
++const hdPathString = `m/44'/1642'/0'/0`
+ const type = 'HD Key Tree'
+ 
+ class HdKeyring extends SimpleKeyring {
